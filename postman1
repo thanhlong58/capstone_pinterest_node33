@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "280e1c88-b913-49a9-92c5-9a6ebb33a10a",
+		"name": "Bài tập capstone Pinterest node33 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26735517",
+		"_collection_link": "https://blue-capsule-80976.postman.co/workspace/Api-qu%E1%BA%A3n-l%C3%BD-sinh-vi%C3%AAn-~3c4b8140-81a7-4aa5-a5d5-44ffa398d6cc/collection/26735517-280e1c88-b913-49a9-92c5-9a6ebb33a10a?action=share&source=collection_link&creator=26735517"
+	},
+	"item": [
+		{
+			"name": "Người dùng đăng ký",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ho_ten\" : \"do vann t\",\r\n    \"mat_khau\": \"1234\",\r\n    \"email\" : \"dovant@gmail.com\",\r\n    \"tuoi\": \"25\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/sign-up",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Người dùng đăng nhập ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"dovanc@gmail.com\",\r\n     \"mat_khau\" : \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/sign-in",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tìm kiếm danh sách ảnh theo tên ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic-by-name/cho",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic-by-name",
+						"cho"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin ảnh và người tạo bằng id ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic-detail/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic-detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin bình luận theo id ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-comment-detail/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-comment-detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kiểm tra hình đã save hay chưa ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImVtYWlsIjoidGhhbmhsb25nMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJG1KdWJTMFZualhxYllPc2FSbmdueXVDdlQuclpOUkVtVjNGcEJDVFkwenJ4MGYuNUxmVi5hIiwiaG9fdGVuIjoiUGhhbiBUaMOgbmggTG9uZyIsInR1b2kiOjI3LCJhbmhfZGFpX2RpZW4iOm51bGx9LCJpYXQiOjE2OTU5NTU5MzEsImV4cCI6MTcyNzUxMzUzMX0.MirITF73mcM1rsKpd_8utgJE1YFM0cadNEsRbCNxeOM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/is-saved/139/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"is-saved",
+						"139",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"noi_dung\" : \"test\",\r\n    \"nguoi_dung_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/pic/comment/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin người dùng",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-user/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh đã lưu theo user id ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-save-images/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-save-images",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sach ảnh đã tạo theo user id ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-created-images/6",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-created-images",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh liên quan ở trang chi tiết",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-pics-related/153",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pics-related",
+						"153"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lưu ảnh dựa vào hình id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/pic/save-pic/139/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"save-pic",
+						"139",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thêm một ảnh",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImVtYWlsIjoidGhhbmhsb25nMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJG1KdWJTMFZualhxYllPc2FSbmdueXVDdlQuclpOUkVtVjNGcEJDVFkwenJ4MGYuNUxmVi5hIiwiaG9fdGVuIjoiUGhhbiBUaMOgbmggTG9uZyIsInR1b2kiOjI3LCJhbmhfZGFpX2RpZW4iOm51bGx9LCJpYXQiOjE2OTU5NTU5MzEsImV4cCI6MTcyNzUxMzUzMX0.MirITF73mcM1rsKpd_8utgJE1YFM0cadNEsRbCNxeOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Long/Desktop/images/khoahoclaptrinh.jpg"
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "mo_ta",
+							"value": "ffdsfdsf",
+							"type": "text"
+						},
+						{
+							"key": "ten_hinh",
+							"value": "long1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/pic/post-pic",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"post-pic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chỉnh sửa thông tin người dùng",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImVtYWlsIjoidGhhbmhsb25nMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJG1KdWJTMFZualhxYllPc2FSbmdueXVDdlQuclpOUkVtVjNGcEJDVFkwenJ4MGYuNUxmVi5hIiwiaG9fdGVuIjoiUGhhbiBUaMOgbmggTG9uZyIsInR1b2kiOjI3LCJhbmhfZGFpX2RpZW4iOm51bGx9LCJpYXQiOjE2OTU5NTU5MzEsImV4cCI6MTcyNzUxMzUzMX0.MirITF73mcM1rsKpd_8utgJE1YFM0cadNEsRbCNxeOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"ho_ten\" : \"do van D\",\r\n   \"mat_khau\": \"password2\",\r\n   \"email\" : \"dovand@gmaill.com\",\r\n   \"tuoi\" : \"29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/update-user/6",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"update-user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xóa hình đã tạo theo user id ",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/delete-image/149/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"delete-image",
+						"149",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		}
+	]
+}
