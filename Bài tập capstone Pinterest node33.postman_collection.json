@@ -1,20 +1,20 @@
 {
 	"info": {
-		"_postman_id": "280e1c88-b913-49a9-92c5-9a6ebb33a10a",
-		"name": "Bài tập capstone Pinterest node33 Copy",
+		"_postman_id": "6c6d1be2-f788-48d4-a002-b13f66958d5e",
+		"name": "Bài tập capstone Pinterest node33",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26735517",
-		"_collection_link": "https://blue-capsule-80976.postman.co/workspace/Api-qu%E1%BA%A3n-l%C3%BD-sinh-vi%C3%AAn-~3c4b8140-81a7-4aa5-a5d5-44ffa398d6cc/collection/26735517-280e1c88-b913-49a9-92c5-9a6ebb33a10a?action=share&source=collection_link&creator=26735517"
+		"_collection_link": "https://blue-capsule-80976.postman.co/workspace/Api-qu%E1%BA%A3n-l%C3%BD-sinh-vi%C3%AAn-~3c4b8140-81a7-4aa5-a5d5-44ffa398d6cc/collection/26735517-6c6d1be2-f788-48d4-a002-b13f66958d5e?action=share&source=collection_link&creator=26735517"
 	},
 	"item": [
 		{
-			"name": "Người dùng đăng ký",
+			"name": "Sign up",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"ho_ten\" : \"do vann t\",\r\n    \"mat_khau\": \"1234\",\r\n    \"email\" : \"dovant@gmail.com\",\r\n    \"tuoi\": \"25\"\r\n}",
+					"raw": "{\r\n    \"ho_ten\" : \"Ky Giai Dư\",\r\n    \"mat_khau\": \"1234\",\r\n    \"email\" : \"giaidu9@gmail.com\",\r\n    \"tuoi\": \"27\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -35,13 +35,13 @@
 			"response": []
 		},
 		{
-			"name": "Người dùng đăng nhập ",
+			"name": "Sign in",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\" : \"dovanc@gmail.com\",\r\n     \"mat_khau\" : \"1234\"\r\n}",
+					"raw": "{\r\n    \"email\" : \"giaidu9@gmail.com\",\r\n     \"mat_khau\" : \"1234\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -62,13 +62,13 @@
 			"response": []
 		},
 		{
-			"name": "Lấy danh sách ảnh ",
+			"name": "Get all images",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUwLCJlbWFpbCI6ImdpYWlkdTlAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkZkoxbkN3MlN6N2YzVmouYVh2TXcvLjhpNEhyVzYzaDZkMnNyWnl1TTEyWUNEZWRieC9lU2kiLCJob190ZW4iOiJLeSBHaWFpIETGsCIsInR1b2kiOjI3LCJhbmhfZGFpX2RpZW4iOm51bGx9LCJpYXQiOjE2OTYwNzExMTMsImV4cCI6MTcyNzYyODcxM30.fykDarG1VdqqGbwvadPUPe8Uy6ShAFKr97bQ4SwS-I4",
 						"type": "text"
 					}
 				],
@@ -86,32 +86,32 @@
 			"response": []
 		},
 		{
-			"name": "Tìm kiếm danh sách ảnh theo tên ",
+			"name": "Get images by name",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjE2LCJlbWFpbCI6InZhbnRlb0BnbWFpbC5jb20iLCJtYXRfa2hhdSI6IiQyYiQxMCRRYWFJaGExcDdjUE41SzRCTmRHeGEub0Z3eWZ2d2VGc3Y4NkRqY1pTN2I4UkNrMWhEV01tcSIsImhvX3RlbiI6IlRy4bqnbiBWxINuIFTDqG8iLCJ0dW9pIjoyNywiYW5oX2RhaV9kaWVuIjpudWxsfSwiaWF0IjoxNjk2MDQyMTcxLCJleHAiOjE3Mjc1OTk3NzF9.2FgAOh3VIHnbRrFJ1gaX767bjFEhEtssDHZemXwx9gk",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "{{domain}}/pic/get-pic-by-name/cho",
+					"raw": "{{domain}}/pic/get-pic-by-name/randomname",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"pic",
 						"get-pic-by-name",
-						"cho"
+						"randomname"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Lấy thông tin ảnh và người tạo bằng id ảnh ",
+			"name": "Get image detail",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -136,7 +136,7 @@
 			"response": []
 		},
 		{
-			"name": "Lấy thông tin bình luận theo id ảnh ",
+			"name": "Get  comment of the image",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -147,21 +147,21 @@
 					}
 				],
 				"url": {
-					"raw": "{{domain}}/pic/get-comment-detail/1",
+					"raw": "{{domain}}/pic/get-comment-detail/100",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"pic",
 						"get-comment-detail",
-						"1"
+						"100"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Kiểm tra hình đã save hay chưa ",
+			"name": "Check if the image is saved or not",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -172,14 +172,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{domain}}/pic/is-saved/139/1",
+					"raw": "{{domain}}/pic/is-saved/135/1",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"pic",
 						"is-saved",
-						"139",
+						"135",
 						"1"
 					]
 				}
@@ -199,7 +199,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"noi_dung\" : \"test\",\r\n    \"nguoi_dung_id\" : 1\r\n}",
+					"raw": "{\r\n    \"noi_dung\" : \"hello world\",\r\n    \"nguoi_dung_id\" : 3\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -221,32 +221,32 @@
 			"response": []
 		},
 		{
-			"name": "Lấy thông tin người dùng",
+			"name": "Get  user info",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjIxLCJlbWFpbCI6ImdpYWlkdTJAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdE5kamtsLkNrRjNiQ2lpa1BsR2ZFLkRJWG5aWi9PVER3OHE2S24uNllEcUFCb2JyRndVbzYiLCJob190ZW4iOiJLeSBHaWFpIETGsCIsInR1b2kiOjI3LCJhbmhfZGFpX2RpZW4iOm51bGx9LCJpYXQiOjE2OTYwNDU5MDEsImV4cCI6MTcyNzYwMzUwMX0.EGor7eowHhDd8zVTo54QI2_UN1VWqDSyysa24fPizn0",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "{{domain}}/user/get-user/1",
+					"raw": "{{domain}}/user/get-user/8",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"user",
 						"get-user",
-						"1"
+						"8"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Lấy danh sách ảnh đã lưu theo user id ",
+			"name": "Get saved images by user id",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -257,13 +257,63 @@
 					}
 				],
 				"url": {
-					"raw": "{{domain}}/user/get-save-images/1",
+					"raw": "{{domain}}/user/get-save-images/40",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"user",
 						"get-save-images",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get created images by user id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-created-images/40",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-created-images",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get related images of the image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/pic/get-pics-related/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pics-related",
 						"1"
 					]
 				}
@@ -271,57 +321,7 @@
 			"response": []
 		},
 		{
-			"name": "Lấy danh sach ảnh đã tạo theo user id ",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{domain}}/user/get-created-images/6",
-					"host": [
-						"{{domain}}"
-					],
-					"path": [
-						"user",
-						"get-created-images",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Lấy danh sách ảnh liên quan ở trang chi tiết",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoiZG92YW5jQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGpsbG5paDhPS3dhNE9jWWhuaDVwLnVvWFMuWWUxN3IuTzVqQXJMdTlXdzA1UVNRN0VReGR5IiwiaG9fdGVuIjoiZG8gdmFubiBjIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NTk1NzE1OCwiZXhwIjoxNzI3NTE0NzU4fQ.-tnMMoIaZuIdPo8ZfcozfvHx1xO1hmYHLklG2BkmPeo",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{domain}}/pic/get-pics-related/153",
-					"host": [
-						"{{domain}}"
-					],
-					"path": [
-						"pic",
-						"get-pics-related",
-						"153"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Lưu ảnh dựa vào hình id",
+			"name": "Save image",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -341,14 +341,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{domain}}/pic/save-pic/139/1",
+					"raw": "{{domain}}/pic/save-pic/159/1",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"pic",
 						"save-pic",
-						"139",
+						"159",
 						"1"
 					]
 				}
@@ -356,7 +356,7 @@
 			"response": []
 		},
 		{
-			"name": "Thêm một ảnh",
+			"name": "Upload image",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -372,21 +372,21 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/Long/Desktop/images/khoahoclaptrinh.jpg"
+							"src": "/C:/Users/Long/Desktop/images/fuhao.png"
 						},
 						{
 							"key": "nguoi_dung_id",
-							"value": "1",
+							"value": "8",
 							"type": "text"
 						},
 						{
 							"key": "mo_ta",
-							"value": "ffdsfdsf",
+							"value": "hình 18+",
 							"type": "text"
 						},
 						{
 							"key": "ten_hinh",
-							"value": "long1",
+							"value": "Fubao",
 							"type": "text"
 						}
 					]
@@ -405,7 +405,7 @@
 			"response": []
 		},
 		{
-			"name": "Chỉnh sửa thông tin người dùng",
+			"name": "Update user",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -417,7 +417,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"ho_ten\" : \"do van D\",\r\n   \"mat_khau\": \"password2\",\r\n   \"email\" : \"dovand@gmaill.com\",\r\n   \"tuoi\" : \"29\"\r\n}",
+					"raw": "{\r\n   \"ho_ten\" : \"new name\",\r\n   \"mat_khau\": \"password2\",\r\n   \"email\" : \"newname@gmail.com\",\r\n   \"tuoi\" : \"29\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -425,21 +425,21 @@
 					}
 				},
 				"url": {
-					"raw": "{{domain}}/user/update-user/6",
+					"raw": "{{domain}}/user/update-user/8",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"user",
 						"update-user",
-						"6"
+						"8"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Xóa hình đã tạo theo user id ",
+			"name": "Delete image",
 			"request": {
 				"method": "DELETE",
 				"header": [
